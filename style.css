@@ -1,0 +1,35 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+
+body{
+    margin: 0px;
+    height: 100vh;
+    background-color: black;
+
+}
+span {
+    background: url("https://cdn4.iconfinder.com/data/icons/small-n-flat/24/heart-256.png");
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: animate 8s linear;
+}
+@keyframes animate {
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(1000deg);
+    }
+    
+}
